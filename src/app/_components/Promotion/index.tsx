@@ -35,20 +35,17 @@ const Promotion = () => {
     return () => {
       clearInterval(timerInterval) // Cleanup the interval when the component unmounts.
     }
-  }, [])
+  }, [targetDate]) 
 
   return (
     <section className={classes.promotion}>
       <div className={classes.textBox}>
         <h3 className={classes.title}>Deals of the Month</h3>
         <p>
-        This month’s flow favorite is here – but not for long.
-Unlock exclusive perks, connect with the community, and elevate your practice with our Rope of the Month.
-Feel the freedom. Own the rhythm. Join the movement.
-
- No time to lose. You’ve got:
-</p>
-
+          This month's flow favorite is here – but not for long. Unlock exclusive perks, connect
+          with the community, and elevate your practice with our Rope of the Month. Feel the
+          freedom. Own the rhythm. Join the movement.
+        </p>
         <ul className={classes.stats}>
           <StatBox label="Days" value={time.days} />
           <StatBox label="Hours" value={time.hours} />
